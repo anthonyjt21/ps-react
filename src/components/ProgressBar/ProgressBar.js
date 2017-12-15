@@ -26,7 +26,7 @@ class ProgressBar extends React.Component {
 }
 
 ProgressBar.propTypes = {
-    /** Percent of progress completed */
+    /** Percent of progress completed is task */
     percent: PropTypes.number.isRequired,
 
     /** Bar width */
