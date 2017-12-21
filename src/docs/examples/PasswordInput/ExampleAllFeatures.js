@@ -1,7 +1,7 @@
 import React from 'react';
 import PasswordInput from 'ps-react/PasswordInput';
 
-/** All features enabled */
+/** All features enabled on this components*/
 class ExampleAllFeatures extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,9 @@ class ExampleAllFeatures extends React.Component {
 
   getQuality() {
     const length = this.state.password.length;
-    return length > 10 ? 100 : length * 10;
+    const valueQuality=length > 10 ? 100 : length * 10
+        console.log("valueQuality "+ valueQuality);
+    return valueQuality;
   }
 
   render() {
